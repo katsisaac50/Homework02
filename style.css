@@ -23,10 +23,11 @@ h1 {
     color: transparent;
     text-shadow: rgba(255, 255, 255, 0.5) 0px 3px 3px;
     font-family: 'Open Sans', sans-serif;
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
     height: 100px;
     margin: auto;
-    transform: perspective(1px) scale(1.1)
+    transform: perspective(1px) scale(1.1);
 }
 
 h2 {
@@ -110,9 +111,9 @@ ul#grid-flex {
         float: left;
         width: calc(50% - 20px);
         display: block;
-        margin-right: 15px;
-        margin-left: 15px;
-        margin-bottom: 12px;
+        margin-right: 5px;
+        margin-left: 5px;
+        margin-bottom: 15px;
         padding: 4px;
         border-radius: 15px;
         overflow: auto;
@@ -135,19 +136,26 @@ ul#grid-flex {
     }
     #grid-flex .grid-item:first-child {
         flex: 100%;
-        width: calc(100% - 20px);
+        width: 100%;
         justify-content: space-between;
-        margin: 20px;
+        margin: 10;
         padding: 4px;
-        border-radius: 30px;
+        border-radius: 15px;
     }
     #grid-flex .grid-item {
-        flex: 40%;
-        width: calc(50% - 12px);
+        flex: 20%;
         justify-content: space-between;
-        margin: 12px;
+        margin-right: 5px;
+        margin-left: 5px;
+        width: calc(50% - 20px);
+        display: block;
+        margin-bottom: 10px;
         padding: 4px;
-        border-radius: 30px;
+        border-radius: 15px;
+        overflow: auto;
+    }
+    h1 {
+        font-size: 3em;
     }
 }
 
@@ -157,8 +165,8 @@ ul#grid-flex {
         width: calc(50% - 20px);
         height: 500px;
         display: block;
-        margin-right: 16px;
-        margin-bottom: 20px;
+        margin-right: 5px;
+        margin-bottom: 5px;
         padding: 4px;
         border-radius: 30px;
     }
@@ -218,19 +226,22 @@ ul#grid-flex {
     /* Styles */
     #grid-floats .grid-item:nth-child(-n+2) {
         float: left;
-        width: calc(50% - 60px);
+        width: calc(49% - 20px);
         height: auto;
         display: block;
-        margin: 0 20px 10px 20px;
+        margin-right: 10px;
         padding: 8px;
         border-radius: 30px;
+        justify-content: space-between;
     }
     #grid-floats .grid-item {
         float: left;
-        width: calc(25% - 60px);
         height: 450px;
         display: block;
-        margin: 0 20px 10px 20px;
+        margin: 2px;
+        width: calc(23.9% - 10px);
+        justify-content: space-between;
+        margin: 2px;
         padding: 8px;
         border-radius: 30px;
     }
