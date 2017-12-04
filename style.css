@@ -143,7 +143,7 @@ ul#grid-flex {
         border-radius: 15px;
     }
     #grid-flex .grid-item {
-        flex: 35%;
+        flex: 30%;
         width: calc(50% - 10px);
         display: block;
         margin-right: 5px;
